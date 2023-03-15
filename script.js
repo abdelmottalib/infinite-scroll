@@ -15,7 +15,7 @@ function imageLoaded() {
 	}
 }
 function displayPhotos() {
-	imageLoaded = 0;
+	imagesLoaded = 0;
 	totalImages = photosArr.length;
 	photosArr.forEach(photo => {
 		const item = document.createElement('a');
@@ -32,12 +32,13 @@ function displayPhotos() {
 }
 
 const count = 10;
-const apikey = 'apikey';
+const apikey = 'MlLSVyn4KVud5uFfPYHrjnZ08HuXK5MVTtzQCcnqKCg';
 const apiurl = `https://api.unsplash.com/photos/random/?client_id=${apikey}&count=${count}`;
 async function getPhotos() {
 	try {
 		const response = await fetch(apiurl);
 		photosArr = await response.json();
+		// console.log(photosArr);
 		displayPhotos()
 	} catch (error) {
 
