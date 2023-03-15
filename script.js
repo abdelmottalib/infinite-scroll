@@ -32,7 +32,7 @@ function displayPhotos() {
 }
 
 const count = 10;
-const apikey = 'MlLSVyn4KVud5uFfPYHrjnZ08HuXK5MVTtzQCcnqKCg';
+const apikey = 'apikey';
 const apiurl = `https://api.unsplash.com/photos/random/?client_id=${apikey}&count=${count}`;
 async function getPhotos() {
 	try {
