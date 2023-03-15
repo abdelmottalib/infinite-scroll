@@ -8,8 +8,8 @@ let  photosArr = [];
 
 
 function imageLoaded() {
-	imageLoaded++;
-	if (imageLoaded === totalImages) {
+	imagesLoaded++;
+	if (imagesLoaded === totalImages) {
 		ready = true;
 		loader.hidden = true;
 	}
