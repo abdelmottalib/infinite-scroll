@@ -38,7 +38,7 @@ async function getPhotos() {
 	try {
 		const response = await fetch(apiurl);
 		photosArr = await response.json();
-		// console.log(photosArr);
+		console.log(photosArr);
 		displayPhotos()
 	} catch (error) {
 
@@ -51,3 +51,4 @@ window.addEventListener('scroll', ()=> {
 	}
 })
 getPhotos();
+// setInterval(_=>console.log("hello"), 10)
